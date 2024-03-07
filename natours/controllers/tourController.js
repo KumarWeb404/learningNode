@@ -200,20 +200,20 @@ exports.deleteTour = async (req, res) => {
   }
 };
 
-exports.getMonthlyPlan = async (req, res) => {
-  try {
-    const year = req.params.year * 1;
-    const plan = await Tour.aggregate([]);
-    res.status(200).json({
-      status: 'success',
-      data: {
-        plan,
-      },
-    });
-  } catch (err) {
-    res.status(400).json({
-      status: 'fail',
-      message: err,
-    });
-  }
-};
+// exports.getMonthlyPlan = async (req, res) => {
+//   try {
+//     const year = req.params.year * 1;
+//     const plan = await Tour.aggregate([]);
+//     res.status(200).json({
+//       status: 'success',
+//       data: {
+//         plan,
+//       },
+//     });
+//   } catch (err) {
+//     res.status(400).json({
+//       status: 'fail',
+//       message: err,
+//     });
+//   }
+// };
