@@ -6,7 +6,8 @@
       "error",
       {
         "endOfLine": "auto"
-      }],
+      }
+    ],
     "spaced-comment": "off",
     "no-console": "warn",
     "consistent-return": "off",
